@@ -1,6 +1,4 @@
 ﻿using ClienteMAUI.Models;
-using Java.Net;
-using Org.Apache.Http.Conn;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

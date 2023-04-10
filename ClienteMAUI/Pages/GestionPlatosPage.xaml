@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClienteMAUI.Pages.GestionPlatosPage"
+             Title="GESTION DE PLATOS">
+    
+     <!--<ContentPage.Resources>-->
+    <!-- <Style TargetType="Button">-->
+    <!-- <Setter Property="Margin" Value="5,10,5,10"/>-->
+    <!-- </Style>-->
+    <!-- </ContentPage.Resources>-->
+    <Grid RowDefinitions="*, Auto" ColumnDefinitions="*,*,*" ColumnSpacing="4">
+        <TableView Intent="Data" Grid.Row="0" Grid.ColumnSpan="3">
+            <TableRoot>
+                <TableSection Title="GESTION DE REGISTROS">
+                    <EntryCell Text="{Binding Path=plato.Nombre}" Placeholder="Ingrese el nombre del plato."/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Button Text="GUARDAR" Clicked="OnGuardarClic" Grid.Row="1" Grid.Column="0" Margin="15,5"/>
+        <Button Text="ELIMINAR" Clicked="OnEliminarClic" Grid.Row="1" Grid.Column="1" Margin="0,5"/>
+        <Button Text="CANCELAR" Clicked="OnCancelarClic" Grid.Row="1" Grid.Column="2" Margin="15,5"/>
+    </Grid>
+    <!--<VerticalStackLayout>-->
+        <!--  <Label Text="GESTION DEL MENU"/>-->
+        <!-- <Entry Text="{Binding Path=Plato.Nombre}" Placeholder="Ingrese el nomnbre del plato"/>-->
+        <!-- <Button Text="GUARDAR" Clicked="OnGuardarClic"/>-->
+        <!-- <Button Text="ELIMINAR" Clicked="OnEliminarClic"/>-->
+        <!-- <Button Text="CANCELAR" Clicked="OnCancelarClic"/>-->
+    <!--</VerticalStackLayout>-->
+</ContentPage>
